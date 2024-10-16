@@ -1,7 +1,7 @@
-wget https://bitcoincore.org/bin/bitcoin-core-26.0/bitcoin-26.0-x86_64-linux-gnu.tar.gz
-tar -xzvf bitcoin-26.0-x86_64-linux-gnu.tar.gz
-ln -s $PWD/bitcoin-26.0/bin/* /usr/local/bin/
+wget https://bitcoincore.org/bin/bitcoin-core-27.1/bitcoin-27.1-x86_64-linux-gnu.tar.gz
+tar -xzvf bitcoin-27.1-x86_64-linux-gnu.tar.gz
+ln -s $PWD/bitcoin-27.1/bin/* /usr/local/bin/
 mkdir -p ~/.bitcoin
-echo "rpcconnect=35.209.148.157" >> ~/.bitcoin/bitcoin.conf
+echo "rpcconnect=84.247.182.145" >> ~/.bitcoin/bitcoin.conf
 echo "rpcuser=classroom" >> ~/.bitcoin/bitcoin.conf
-echo "rpcpassword=sNCAmDkQgHtk" >> ~/.bitcoin/bitcoin.conf
+echo "rpcpassword=R4uo1NgQGuFx" >> ~/.bitcoin/bitcoin.conf
