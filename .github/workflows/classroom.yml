@@ -19,7 +19,7 @@ jobs:
       with:
         test-name: Setup
         setup-command: ''
-        command: sh ./submission/setup.sh
+        command: bash ./submission/setup.sh
         timeout: 10
     - name: What is the hash of block 654,321?
       id: what-is-the-hash-of-block-654-321
@@ -27,7 +27,7 @@ jobs:
       with:
         test-name: What is the hash of block 654,321?
         setup-command: ''
-        command: sh ./submission/001.sh
+        command: bash ./submission/001.sh
         input: ''
         expected-output: '000000000000000000058452bbe379ad4364fe8fda68c45e299979b492858095'
         comparison-method: exact
@@ -39,7 +39,7 @@ jobs:
       with:
         test-name: Verify the signature by this address over this message...
         setup-command: ''
-        command: sh ./submission/002.sh
+        command: bash ./submission/002.sh
         input: ''
         expected-output: 'false'
         comparison-method: exact
@@ -51,7 +51,7 @@ jobs:
       with:
         test-name: How many new outputs were created by block 123,456?
         setup-command: ''
-        command: sh ./submission/003.sh
+        command: bash ./submission/003.sh
         input: ''
         expected-output: '24'
         comparison-method: exact
@@ -65,7 +65,7 @@ jobs:
         test-name: Using descriptors, compute the 100th taproot address derived from
           this extended public key...
         setup-command: ''
-        command: sh ./submission/004.sh
+        command: bash ./submission/004.sh
         input: ''
         expected-output: bc1p3yrtpvv6czx63h2sxwmeep8q98h94w4288fc4cvrkqephalydfgszgacf9
         comparison-method: exact
@@ -79,7 +79,7 @@ jobs:
         test-name: Create a 1-of-4 P2SH multisig address from the public keys in the
           four inputs of this tx...
         setup-command: ''
-        command: sh ./submission/005.sh
+        command: bash ./submission/005.sh
         input: ''
         expected-output: 3GyWg1CCD3RDpbwCbuk9TTRQptkRfczDz8
         comparison-method: exact
@@ -91,7 +91,7 @@ jobs:
       with:
         test-name: Which tx in block 257,343 spends the coinbase output of block 256,128?
         setup-command: ''
-        command: sh ./submission/006.sh
+        command: bash ./submission/006.sh
         input: ''
         expected-output: c54714cb1373c2e3725261fe201f267280e21350bdf2df505da8483a6a4805fc
         comparison-method: exact
@@ -105,7 +105,7 @@ jobs:
         test-name: Only one single output remains unspent from block 123,321. What
           address was it sent to?
         setup-command: ''
-        command: sh ./submission/007.sh
+        command: bash ./submission/007.sh
         input: ''
         expected-output: 1FPDNNmgwEnKuF7GQzSqUcVQdzSRhz4pgX
         comparison-method: exact
@@ -117,7 +117,7 @@ jobs:
       with:
         test-name: Which public key signed input 0 in this tx...
         setup-command: ''
-        command: sh ./submission/008.sh
+        command: bash ./submission/008.sh
         input: ''
         expected-output: 025d524ac7ec6501d018d322334f142c7c11aa24b9cffec03161eca35a1e32a71f
         comparison-method: exact
