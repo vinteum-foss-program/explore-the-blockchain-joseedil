@@ -19,7 +19,7 @@ jobs:
       with:
         test-name: Setup
         setup-command: ''
-        command: sh ./submission/setup.sh
+        command: bash ./submission/setup.sh
         timeout: 10
     - name: What is the hash of block 654,321?
       id: what-is-the-hash-of-block-654-321
